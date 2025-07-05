@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://bivashkc.com/sitemap.xml
+
+# Disallow certain files
+Disallow: /js/
+Disallow: /css/
+Disallow: *.pdf
+
+# Allow important pages
+Allow: /index.html
+Allow: /
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
