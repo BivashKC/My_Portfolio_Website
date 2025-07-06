@@ -103,9 +103,38 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title">
-                        Hi, I'm <span class="highlight">Bivash KC</span>
+                    <h1 class="hero-title" style="
+                        font-family: 'Courier New', monospace; 
+                        color: #00ffcc; 
+                        background-color: #111; 
+                        padding: 10px 30px; 
+                        border-radius: 8px; 
+                        box-shadow: 0 0 10px rgba(0,255,200,0.3);
+                        white-space: nowrap;  
+                        display: inline-block; 
+                        position: relative;
+                        overflow: hidden ;  
+                    "> 
+                        Hello, I’m Bivash KC 
                     </h1>
+
+                    <style>
+                        .hero-title::after {
+                            content: "_";
+                            position: absolute;
+                            top: 0;
+                            right: 20px; /* Adjust to position just after the text */
+                            color: #83ddcb;
+                            height: 100%;
+                            animation: blink 1s step-start infinite;
+                        }
+
+                        @keyframes blink {
+                            50% {
+                                opacity: 0;
+                            }
+                        }
+                    </style>
                     <p class="hero-subtitle">Aspiring Data Analyst & AI/ML Enthusiast</p>
                     <p class="hero-location">
                         <i class="fas fa-map-marker-alt"></i>
@@ -272,6 +301,10 @@
                         <div class="skill-item">
                             <i class="fas fa-code"></i>
                             <span>C</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java (Basics)</span>
                         </div>
                         <div class="skill-item">
                             <i class="fab fa-html5"></i>
